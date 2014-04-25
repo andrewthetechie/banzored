@@ -59,8 +59,6 @@ try {
     echo 'ERROR: ' . $e->getMessage();
 }
 
-$query = "select * from trapped where ip='$user_ip'";
-$dbh = null;
 function getUserIP()
 {
     $client  = @$_SERVER['HTTP_CLIENT_IP'];
@@ -82,8 +80,5 @@ function getUserIP()
 
     return $ip;
 }
-
-
-
 
 ?>
